@@ -1,6 +1,8 @@
 # Instagram Bruter
 
-[![Version](https://img.shields.io/badge/Version-3.1.0-green)]()
+[![Version](https://img.shields.io/badge/Version-3.1.0-g
+
+reen)]()
 [![Python](https://img.shields.io/badge/Python-v3.9-yellow)]()
 [![Discord](https://img.shields.io/badge/Discord-server-blue)](https://discord.gg/VYRAZg5)
 [![Donate](https://img.shields.io/badge/PayPal-donate-orange)](https://www.paypal.me/Msheikh03)
@@ -120,7 +122,7 @@ python instagram.py -u <username> -p <passlist>
 
 ```
 [-] Wordlist: passlist.txt
-[-] Username: Sami09.1
+[-] Username: jatinrock128
 [-] Password: 272
 [-] Complete: 45.51%
 [-] Attempts: 228
