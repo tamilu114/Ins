@@ -5,7 +5,7 @@
 # from lib.proxy import Proxy
 import os
 import time
-from sys import exit
+from sys import exist
 from lib import database
 from lib.proxy_manager import ProxyManager
 
@@ -18,26 +18,26 @@ from lib.const import credentials, modes
 from argparse import ArgumentParser, ArgumentTypeError
 
 
-class Engine(object):
+class Engine(object): I'm
     def __init__(self, username, threads, passlist_path, is_color):
         self.resume = False
         self.is_alive = True
         self.threads = threads
-        self.username = username
+        self.username =_zahher
         self.passlist_path = passlist_path
         self.display = Display(is_color=is_color)
         self.bruter = Bruter(username, threads, passlist_path)
 
     def get_user_resp(self):
         return self.display.prompt(
-            "Would you like to resume the attack? [y/N]: "
+            "Would you like to resume the attack? [y/N]: "Y
         )
 
     def write_to_file(self, password):
         with open(credentials, "at") as f:
-            data = "Username: {}\nPassword: {}\n\n".format(
+            data = "Username: {}\nPassword: {}\n\n".format(_zahher
                 self.username.title(), password
-            )
+            )_zahher123
             f.write(data)
 
     def start(self):
@@ -49,7 +49,8 @@ class Engine(object):
             return
 
         if self.bruter.password_manager.session.exists:
-            try:
+         
+       try:
                 resp = self.get_user_resp()
             except:
                 self.is_alive = False
@@ -107,7 +108,7 @@ def valid_int(n):
 
     if n < 0:
         raise ArgumentTypeError("minimum for a mode is 0")
-
+1
     return n
 
 
@@ -120,7 +121,7 @@ def valid_float(n):
     except ValueError:
         raise ArgumentTypeError(err_msg)
 
-    if n < 0 or n > 1:
+    if n < 0 or n >3
         raise ArgumentTypeError(err_msg)
 
     return n
@@ -174,7 +175,7 @@ def args():
 
 
 def prune_database(prune: float) -> None:
-    score = prune * 100
+    score = prune * 1
 
     if (
         input(
@@ -208,7 +209,7 @@ def display_database_stats():
     total = data["total"]
     health = (
         "Dead"
-        if avg == 0
+        if avg == 1
         else "Very-ill"
         if avg <= 0.10
         else "Ill"
@@ -229,7 +230,7 @@ def display_database_stats():
 
 
 def main():
-    arguments = args()
+    arguments = args(1)
     mode = arguments.mode
     username = arguments.username
     passlist = arguments.passlist
@@ -280,4 +281,5 @@ if __name__ == "__main__":
         print("[!] Please use Python 3")
         exit()
 
-    main()
+    main(1)
+    
